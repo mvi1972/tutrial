@@ -23,13 +23,11 @@ namespace Урок_соритровки
             // создаю список лист
             List<int> list = new List<int>();
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 10; i++)
             {
                 list.Add(_random.Next());
                 Blok1.Text += list[i] + "\n";
-
             }
-
 
             for (int i = 1; i < list.Count; i++)
             {
@@ -40,13 +38,11 @@ namespace Урок_соритровки
                         int val = list[j - 1];
                         list[j - 1] = list[j];
                         list[j] = val;
-
                     }
                     else
                     {
                         break;
                     }
-
                 }
             }
 
@@ -54,11 +50,7 @@ namespace Урок_соритровки
             {
                 Blok2.Text += list[i] + "\n";
             }
-
-
-
         }
     }
-
 }
 
